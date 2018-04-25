@@ -1,0 +1,52 @@
+﻿@{ Layout = null; }
+
+@{
+    ViewBag.Title = "View";
+}
+
+<!DOCTYPE html>
+
+<head>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/DictionaryController.js"></script>
+    <link href="~/Scripts/WordStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+@*<header>
+        <h1 id="header">The Dictionary Game</h1>
+    </header>*@
+
+<body ng-app="WordApp" ng-controller="wordController">
+    <div class="background">
+        <div class="content">
+            <div>
+                <input id="wordInput" type="text" style="font-size:48px; width:80%" ng-keyup="updateWord()" />
+                <i id="icon" class="fa fa-check-circle" style="font-size:48px; display:none;"></i>
+                <span ng-click="skipWord()">
+                    <i id="swap" class="fa fa-exchange" style="font-size:48px;"></i>
+                </span>
+            </div>
+
+            <div id="wordInfo" ng-init="firstWord()">
+                <p class="words" id="worddef1" style="font-size:24px;">{{dictionary.Definition}}</p>
+                @*<p class="words" id="worddef2" style="font-size:24px; display:none">{{words.WordDef2}}</p>
+                    <p class="words" id="worddef3" style="font-size:24px; display:none">{{words.WordDef3}}</p>*@
+                @*<p class="words" id="word1" style="font-size:24px;">{{dictionary.Word}}</p>*@
+            </div>
+
+        </div>
+
+
+        @*<div class="outer">
+                <div class="middle">
+                    <div class="inner">
+
+                    </div>
+                </div>
+            </div>*@
+    </div>
+</body>
+
+

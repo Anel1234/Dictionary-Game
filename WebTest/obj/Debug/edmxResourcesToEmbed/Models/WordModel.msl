@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DictionaryGameModelStoreContainer" CdmEntityContainer="DictionaryGameEntities">
+    <EntitySetMapping Name="Words">
+      <EntityTypeMapping TypeName="DictionaryGameModel.Word">
+        <MappingFragment StoreEntitySet="Words">
+          <ScalarProperty Name="WordID" ColumnName="WordID" />
+          <ScalarProperty Name="Word1" ColumnName="Word" />
+          <ScalarProperty Name="WordDef1" ColumnName="WordDef1" />
+          <ScalarProperty Name="WordDef2" ColumnName="WordDef2" />
+          <ScalarProperty Name="WordDef3" ColumnName="WordDef3" />
+          <ScalarProperty Name="WordType" ColumnName="WordType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
